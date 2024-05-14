@@ -10,6 +10,15 @@ function initializeScanner() {
             .then(function (stream) {
                 // Set the video source to the camera stream
                 video.srcObject = stream;
+
+                // Initialize barcode scanner library (e.g., QuaggaJS)
+                // Set up event listeners to handle barcode detection
+
+                // Example event listener for successful barcode detection
+                video.addEventListener('barcode-detected', function(event) {
+                    const barcodeNumber = event.detail.barcodeNumber;
+                    navigateToURL(barcodeNumber);
+                });
             })
             .catch(function (error) {
                 console.error('Error accessing camera:', error);
@@ -17,9 +26,12 @@ function initializeScanner() {
     } else {
         console.error('getUserMedia is not supported');
     }
+}
 
-    // Initialize barcode scanner library (e.g., QuaggaJS)
-    // Set up event listeners to handle barcode detection
+// Function to navigate to URL with barcode number
+function navigateToURL(barcodeNumber) {
+    const url = 'https://example.com/' + barcodeNumber; // Replace 'example.com' with your actual domain
+    window.location.href = url;
 }
 
 // Call the initializeScanner function when the page loads
