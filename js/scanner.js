@@ -30,7 +30,7 @@ function initializeScanner() {
 
 // Function to navigate to URL with barcode number
 function navigateToURL(barcodeNumber) {
-    const url = 'https://example.com/' + barcodeNumber; // Replace 'example.com' with your actual domain
+    const url = 'https://fitme.jisby.com/' + barcodeNumber; // Replace 'example.com' with your actual domain
     window.location.href = url;
 }
 
