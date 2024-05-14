@@ -1,0 +1,345 @@
+body {
+    padding: 56px 0 70px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background: #ffffff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0;
+}
+
+/* visual-area */
+
+.visual-area {
+    margin: 25px 0;
+}
+
+.visual-area .canvas {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 95%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.visual-area .canvas img {
+    width: 100%;
+    filter: brightness(0.7);
+}
+
+/* 카테고리 */
+
+.category {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 25px auto;
+    width: 80%;
+}
+
+.category a {
+    display: block;
+    flex : 0 1 21%;
+    padding: 5px 0;
+    color: #000;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+.category a .canvas {
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #f4f4f4;
+    border-radius: 20px;
+}
+
+.category a .canvas img {
+    width: 100%;
+}
+
+.category a span {
+    display: block;
+    padding: 5px 0 0 0;
+    text-align: center;
+}
+
+/* 프로필 */
+
+.profile {
+    margin: 25px auto;
+    width: 95%;
+}
+
+.profile .profile-card {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ea4d73;
+    border-bottom: 1px solid #ea4d73;
+    box-sizing: border-box;
+}
+
+.profile .profile-card .canvas {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.profile .profile-card .canvas img {
+    height: 100%;
+}
+
+.profile .profile-card > div:nth-child(2) {
+    flex-grow: 1;
+    padding: 0 15px;
+}
+
+.profile .profile-card > div:nth-child(2) h1 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.profile .profile-card > div:nth-child(2) p {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.profile .profile-card > div:nth-child(2) .color {
+    padding: 0 0 10px 0;
+}
+
+.profile .profile-card > div:nth-child(2) .color div {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+.profile .profile-card > div:nth-child(2) .color div:nth-child(1) {
+    background: #ea4d73;
+}
+
+.profile .profile-card > div:nth-child(2) .color div:nth-child(2) {
+    background: #f66509;
+}
+
+.profile .profile-card > div:nth-child(2) .color div:nth-child(3) {
+    background: #e78f00;
+}
+
+.profile .profile-card > div:nth-child(2) .color div:nth-child(4) {
+    background: #cb7065;
+}
+
+.profile > div:nth-child(2) a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: #ea4d73;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.profile > div:nth-child(2) svg {
+    width: 20px;
+    vertical-align: bottom;
+}
+
+/* AI */
+
+.ai {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.ai .title {
+    margin: 20px 0;
+}
+
+.ai .title p {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.ai .title h1 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.ai .title h1 span {
+    color: #F24171;
+}
+
+.ai input {
+    display: none;
+}
+
+.ai input:checked + label {
+    background: #ea4d73;
+    color: #fff;
+}
+
+.ai input:checked + label span{
+    color: #fff;
+}
+
+.ai label {
+    display: inline-block;
+    padding: 1px 10px;
+    margin: 20px 2.5px;
+    border: 1px solid #ea4d73;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.ai label span {
+    color: #ea4d73;
+    font-weight: 900;
+}
+
+.ai ul {
+    display: none;
+}
+
+/* AI-filter*/
+.ai input.product:checked ~ ul.product {
+    display: block;
+}
+
+.ai input.video:checked ~ ul.video {
+    display: block;
+}
+
+/* AI-product */
+
+.ai ul.product {
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+}
+
+.ai ul.product li {
+    display: flex;
+    margin: 10px 0;
+}
+
+.ai ul.product li .canvas {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #f4f4f4;
+    border-radius: 15px;
+}
+
+.ai ul.product li .canvas img {
+    height: 100%;
+}
+
+.ai ul.product li .info {
+    flex: 1;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.ai ul.product li .info h1 {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.ai ul.product li .info p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ai ul.product li .info p:nth-child(2) svg {
+    width: 15px;
+    height: 15px;
+}
+
+.ai ul.product li .info h2 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ai ul.product li .info h2 span {
+    padding: 0 5px 0 0;
+    color: #ea4d73;
+    font-size: 17px;
+    font-weight: 900;
+    vertical-align: -1px;
+}
+
+.ai ul.product li .info p:nth-child(4) {
+    color: #F24171;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+/* AI-video */
+
+.ai ul.video {
+    padding: 0;
+    text-align: left;
+}
+
+.ai ul.video {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.ai ul.video li {
+    margin: 20px 0;
+}
+
+.ai ul.video li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.ai ul.video li a .canvas {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+}
+
+.ai ul.video li a .canvas img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    filter: brightness(0.9);
+    transform: translate(-50%,-50%);
+}
+
+.ai ul.video li a div:nth-child(2) {
+    width: 90%;
+}
+
+.ai ul.video li a div:nth-child(2) h1 {
+    overflow: hidden;
+    display: block;
+    padding: 5px 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 800;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ai ul.video li a div:nth-child(2) p {
+    display: block;
+    color: #000;
+    font-size: 12.5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ai ul.video li a div:nth-child(2) p svg {
+    height: 12.5px;
+    vertical-align: -2px;
+}
