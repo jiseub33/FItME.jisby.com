@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/scanner.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/footer.css">
     <title>Fit Me</title>
-    <script src="https://cdn.jsdelivr.net/npm/quagga/dist/quagga.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quagga"></script>
+    <script src="js/scanner.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,36 +18,7 @@
             <img src="images/icon/search.svg" alt="">
         </div>
     </header>
-    <video id="barcode-scanner" style="width: 100%; max-width: 640px;"></video>
-    <script>
-        Quagga.init({
-            inputStream : {
-                name : "Live",
-                type : "LiveStream",
-                target: document.querySelector('#barcode-scanner'),
-                constraints: {
-                    width: 640,
-                    height: 480,
-                    facingMode: "environment" // or "user" for front camera
-                }
-            },
-            decoder : {
-                readers : ["ean_reader", "upc_reader", "code_128_reader"]
-            }
-        }, function(err) {
-            if (err) {
-                console.log(err);
-                return
-            }
-            console.log("Initialization finished. Ready to start");
-            Quagga.start();
-        });
-
-        Quagga.onDetected(function(result) {
-            console.log("Barcode detected and processed: [" + result.codeResult.code + "]", result);
-            // Do something with the barcode result here
-        });
-    </script>
+    <video id="barcode-video" width="100%" height="auto" autoplay></video>
     <div class="menu">
         <div>
             <a href="">
