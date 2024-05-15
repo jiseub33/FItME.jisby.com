@@ -1,0 +1,74 @@
+body {
+    padding: 56px 0 70px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background: #ffffff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0;
+}
+
+/* AI-video */
+
+ul.video {
+    padding: 0;
+    text-align: left;
+}
+
+ul.video {
+    margin: 0 auto;
+    width: 90%;
+}
+
+ul.video li {
+    margin: 20px 0;
+}
+
+ul.video li a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul.video li a .canvas {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+}
+
+ul.video li a .canvas img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    filter: brightness(0.9);
+    transform: translate(-50%,-50%);
+}
+
+ul.video li a div:nth-child(2) {
+    width: 90%;
+}
+
+ul.video li a div:nth-child(2) h1 {
+    overflow: hidden;
+    display: block;
+    padding: 5px 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 800;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+ul.video li a div:nth-child(2) p {
+    display: block;
+    color: #000;
+    font-size: 12.5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+ul.video li a div:nth-child(2) p svg {
+    height: 12.5px;
+    vertical-align: -2px;
+}

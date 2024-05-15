@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Fit Me</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo/LOGO_FIT ME.png" alt="">
+            <img src="images/icon/search.svg" alt="">
+        </div>
+    </header>
+    <div class="visual-area">
+        <div class="canvas">
+            <img src="images/visual-area/2.jpg" alt="">
+        </div>
+        <h1>WELCOME,<br>AI STORE</h1>
+    </div>
+    <div class="ai">
+        <div class="title">
+            <p>STORE 찾기</p>
+        </div>
+        <input class="store-filter-1" type="radio" name="store-filter" id="store-filter-1"><label for="store-filter-1">가까운매장</label>
+        <input class="store-filter-2" type="radio" name="store-filter" id="store-filter-2" checked><label for="store-filter-2">자주가는매장</label>
+        <input class="store-filter-3" type="radio" name="store-filter" id="store-filter-3"><label for="store-filter-3">인기매장</label>
+        <ul class="store-filter-1">
+            <li>
+                <div class="canvas">
+                    <img src="images/visual-area/2.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h1>하카타</h1>
+                    <p class="address">2 Chome-11-4 Hakata Ekimae, Hakata Ward, Fukuoka, 812-0011 일본</p>
+                    <p class="parking">주차가능</p>
+                    <h2>0.1<span>Km</span></h2>
+                </div>
+            </li>
+        </ul>
+        <ul class="store-filter-2">
+            <p>내 주위에 자주가는매장이 없어요<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 13.6169 21.6162 15.1442 20.9348 16.4958C20.8633 16.2175 20.7307 15.9523 20.5374 15.7206L20.4142 15.5858L19 14.1716L17.5858 15.5858L17.469 15.713C16.8069 16.4988 16.8458 17.6743 17.5858 18.4142C18.014 18.8424 18.588 19.0358 19.148 18.9946C17.3323 20.8487 14.8006 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM12 15C10.6199 15 9.37036 15.5592 8.46564 16.4633L8.30009 16.6368L9.24506 17.4961C10.035 17.1825 10.982 17 12 17C12.9049 17 13.7537 17.1442 14.4859 17.3965L14.7549 17.4961L15.6999 16.6368C14.7853 15.6312 13.4664 15 12 15ZM8.5 10C7.67157 10 7 10.6716 7 11.5C7 12.3284 7.67157 13 8.5 13C9.32843 13 10 12.3284 10 11.5C10 10.6716 9.32843 10 8.5 10ZM15.5 10C14.6716 10 14 10.6716 14 11.5C14 12.3284 14.6716 13 15.5 13C16.3284 13 17 12.3284 17 11.5C17 10.6716 16.3284 10 15.5 10Z"></path></svg></p>
+        </ul>
+    </div>
+    <footer>
+        <img src="images/logo/LOGO_FIT ME.png" alt="">
+        <h1>FIT ME(주)</h1>
+        <a href="">이용약관</a>
+        <span>|</span>
+        <a href="">개인정보처리방침</a>
+    </footer>
+    <div class="menu">
+        <div>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+                <p>카테고리 </p>
+            </a>
+            <a href="video">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.376 12.4161L8.77735 19.4818C8.54759 19.635 8.23715 19.5729 8.08397 19.3432C8.02922 19.261 8 19.1645 8 19.0658V4.93433C8 4.65818 8.22386 4.43433 8.5 4.43433C8.59871 4.43433 8.69522 4.46355 8.77735 4.5183L19.376 11.584C19.6057 11.7372 19.6678 12.0477 19.5146 12.2774C19.478 12.3323 19.4309 12.3795 19.376 12.4161Z"></path></svg>
+                <p>영상</p>
+            </a>
+            <a href="index">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V9.48907C3 9.18048 3.14247 8.88917 3.38606 8.69972L11.3861 2.47749C11.7472 2.19663 12.2528 2.19663 12.6139 2.47749L20.6139 8.69972C20.8575 8.88917 21 9.18048 21 9.48907V20Z"></path></svg>
+                <p>홈</p>
+            </a>
+            <a href="store" class="active">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 13V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V13H2V11L3 6H21L22 11V13H21ZM5 13V19H19V13H5ZM6 14H14V17H6V14ZM3 3H21V5H3V3Z"></path></svg>
+                <p>AI스토어</p>
+            </a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13Z"></path></svg>
+                <p>마이</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
