@@ -1,0 +1,62 @@
+{
+  "background_color": "#ffffff",
+  "description": "Fit Me",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Fit Me",
+  "orientation": "any",
+  "scope": "https://fitme.jisby.com/",
+  "short_name": "Fit Me",
+  "start_url": "https://fitme.jisby.com",
+  "theme_color": "#f8f8f8",
+  "categories": [
+    "travel"
+  ],
+  "icons": [
+    {
+      "src": "https://fitme.jisby.com/images/logo/logo_128x128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "any"
+    },
+    {
+      "src": "https://fitme.jisby.com/images/logo/logo_256x256.png",
+      "type": "image/png",
+      "sizes": "256x256",
+      "purpose": "any"
+    },
+    {
+      "src": "https://fitme.jisby.com/images/logo/logo_384x384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "any"
+    },
+    {
+      "src": "https://fitme.jisby.com/images/logo/logo_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "https://fitme.jisby.com/images/logo/logo_1024x1024_mask.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://fitme.jisby.com/images/logo/logo_1024x1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Fit Me",
+      "url": "https:/fitme.jisby.com/",
+      "description": "Fit Me"
+    }
+  ],
+  "prefer_related_applications": false,
+  "lang": "ko"
+}

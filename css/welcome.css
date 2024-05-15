@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    background: rgb(248, 248, 248);
+    line-height: 1;
+}
+
+body > div.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    margin: 0 auto;
+
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.title .maintitle {
+    position: relative;
+    margin: 80px 0 0 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.title .maintitle h1 {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    transform: translateY(-2px);
+}
+
+
+.title .maintitle img{
+    padding: 20px 0;
+    width: 50%;
+}
+
+a {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 20px;
+    background: #fff;
+
+    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 75px;
+    text-decoration: none;
+}
+
+.add-button {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.add-button  svg {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    width: 50px;
+    transform: translate(0,-50%);
+}
+
+.add-button p {
+    display: inline-block;
+    vertical-align: top;
+    color: #141414;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 800;
+    line-height: 75px;
+    text-decoration: none;
+}
+
+p.subtitle {
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    padding: 15px 0 0 0;
+    width: 100%;
+
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
