@@ -47,6 +47,7 @@ body {
 
 
 .category a .canvas {
+    position: relative;
     overflow: hidden;
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -55,7 +56,11 @@ body {
 }
 
 .category a .canvas img {
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
 }
 
 .category a span {

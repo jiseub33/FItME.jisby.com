@@ -8,7 +8,7 @@
   "scope": "https://fitme.jisby.com/",
   "short_name": "Fit Me",
   "start_url": "https://fitme.jisby.com",
-  "theme_color": "#f8f8f8",
+  "theme_color": "#fff",
   "categories": [
     "travel"
   ],
