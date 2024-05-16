@@ -13,6 +13,7 @@ video {
     height: 100vh;
     object-fit: cover;
     z-index: 300;
+    transform: scaleX(-1);
 }
 
 #stopButton {
