@@ -55,7 +55,7 @@ function stopCamera() {
     setTimeout(() => {
         loadingIndicator.style.display = 'none';
         aiContent.style.display = 'block';
-    }, 10000);
+    }, 2000);
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
